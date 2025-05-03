@@ -10,10 +10,10 @@
 var largura = 5;
 var altura = 4;
 
-// Calculando a área da parede
-
+// Criando uma váriavel para calcular a área da parede
+var area = largura * altura;
 // Exibindo o resultado no console
-console.log("A área da parede é:");
+console.log(`A área da parede é: ${area} metros quadrados.`);
 
 //-------------------------------------------------------------------------------------------------
 
@@ -28,12 +28,11 @@ console.log("A área da parede é:");
 var nome = "João";
 var sobrenome = "Silva";
 
-// Juntando os nomes com a mensagem de boas-vindas
+// Juntando os nomes
   
-       //seu código
-
+       var nome_completo = nome + " " + sobrenome;
 // Exibindo a mensagem no console
-console.log();
+console.log(`Seja muito Bem-vindo(a), ${nome_completo}!`);
 
 
 //-------------------------------------------------------------------------------------------------
@@ -47,15 +46,19 @@ console.log();
 // considerando que todos os anos têm 365 dias.
 
 // Idade do funcionário em anos
-var idadeEmAnos = 30;
+var idade_em_anos = 30;
 
-// Calculando anos em dias
-  
-      //seu código
+// calculo ano bissexto
+      // ano bissexto ocorre a cada 4 anos
+      var ano_bissexto = idade_em_anos / 4
 
+      // calculo dos dias vividos
+      // calculando os dias vividos usando a idade dada pelo exercicio * 365 dias ( equivalente a 1 ano)
+      // mais o calculo do ano bissexto
+      var dias_vividos = (idade_em_anos * 365) + ano_bissexto
 
 // Exibindo o resultado no console
-console.log("O funcionário viveu aproximadamente... dias");
+console.log(`O funcionário viveu aproximadamente ${dias_vividos} dias`);
 
 //-------------------------------------------------------------------------------------------------
 
@@ -73,7 +76,9 @@ var duracaoEmMinutos = 135;
 // Calculando horas e minutos
   
       //seu código
+      var horas = Math.floor(duracaoEmMinutos / 60); // Calcula o número de horas
+      var minutos = duracaoEmMinutos % 60; // Calcula o número de minutos restantes
 
 
 // Exibindo o resultado no console
-console.log("O evento durou ...horas e ... minutos.");
+console.log(`O evento durou ${horas} horas e ${minutos} minutos.`);
